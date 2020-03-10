@@ -1,0 +1,10 @@
+---
+default: -p firefox -p report_html -p terminal_pretty 
+report_html: --format html --out=features/reports/report.html
+terminal_pretty: --format pretty
+terminal_progress: --format progress 
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: HEADLESS=headless -p chrome
+data: DATA=login
+exec_data: -p firefox -p report_html -p terminal_pretty -p data
